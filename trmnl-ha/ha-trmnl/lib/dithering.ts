@@ -285,7 +285,7 @@ function configureOutputFormat(
         .define(`png:compression-level=${compressionLevel}`)
         .define('png:compression-filter=5')
         .define('png:compression-strategy=1')
-        .define('png:exclude-chunks=all')
+        .define('png:exclude-chunks=date,text,time')
     }
     log.debug`PNG compression level: ${compressionLevel}`
   }
